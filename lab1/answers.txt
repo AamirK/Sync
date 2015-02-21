@@ -1,2 +1,6 @@
 Place the answers to required questions in this text file.
 
+1. 'cmpl $(NR_syscalls), %eax' validates the system call number. The system call number is stored in %eax and cmpl tests the value of (%eax - $NR_syscalls) while $NR_syscalls is the maximum number of implementable system calls. Cmpl is also used to set flags for conditional expressions written in x86. 
+
+2. The first register is ebx and it stores the first parameter. The second register is ecx and it stores the second parameter. The third register is edx and it stores the third parameter. The fourth register is esi and it stores the fourth parameter.
+

@@ -31,7 +31,7 @@ f(void)
 
     c = (int *) ((char *) c + 1);
     *c = 500;
-    printf("5: a[0] = %d, a[1] = %d, a[2] = %d, a[3] = %d\n",
+	printf("5: a[0] = %d, a[1] = %d, a[2] = %d, a[3] = %d\n",
 	   a[0], a[1], a[2], a[3]);
 
     b = (int *) a + 1;

@@ -16,6 +16,7 @@ main(int argc, char **argv)
   // Put in-line assembly here to increment
   // the value of x by 1 using in-line assembly
   //
+  asm("add $1, %%eax":"=a"(x): "a"(x));
 
   printf("Hello x = %d after increment\n", x);
 

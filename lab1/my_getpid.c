@@ -22,7 +22,7 @@ int main() {
   // 
   //  E.g.: 
   // pid2 = MY_SYSCALL...(NUM);
-
+	pid2 = MY_SYSCALL0(20);
   if (pid1 == pid2 && pid2 > 0)
       printf("Congratulations!  You have correctly gotten your pid with inline assembly, which is is %d\n", pid1);
   else 
