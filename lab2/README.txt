@@ -1,0 +1,1 @@
+﻿We have completed the first 7 parts of this assignment. I spent a lot of time attempting part 8 but to no avail. The power outage did not help either. 

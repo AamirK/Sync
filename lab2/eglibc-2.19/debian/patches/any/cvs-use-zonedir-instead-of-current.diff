@@ -1,0 +1,24 @@
+Description: tzselect: use zonedir instead of current working directory
+  This was backported from two patches that ultimately fix tzselect:
+  * timezone/Makefile ($(objpfx)tzselect): Use zonedir instead
+  current working directory
+  * timezone/Makefile ($(objpfx)tzselect): Use correct variable
+  in sed expression 
+
+Author: Sami Kerola <kerolasa@iki.fi>
+Author: Allan McRae <allan@archlinux.org>
+Bug-Ubuntu: https://bugs.launchpad.net/bugs/1294861
+Origin: upstream, https://sourceware.org/git/?p=glibc.git;a=patch;h=893b4f37
+Origin: upstream, https://sourceware.org/git/?p=glibc.git;a=patch;h=c72399fb
+
+--- eglibc-2.19.orig/timezone/Makefile
++++ eglibc-2.19/timezone/Makefile
+@@ -114,7 +114,7 @@ $(testdata)/Asia/Tokyo: asia $(zic-deps)
+ 
+ $(objpfx)tzselect: tzselect.ksh $(common-objpfx)config.make
+ 	sed -e 's|/bin/bash|$(KSH)|g' \
+-	    -e '/TZDIR=/s|\$$(pwd)|$(zonedir)|' \
++	    -e 's|TZDIR=[^}]*|TZDIR=$(zonedir)|' \
+ 	    -e '/TZVERSION=/s|see_Makefile|"$(version)"|' \
+ 	    -e '/PKGVERSION=/s|=.*|="$(PKGVERSION)"|' \
+ 	    -e '/REPORT_BUGS_TO=/s|=.*|="$(REPORT_BUGS_TO)"|' \
