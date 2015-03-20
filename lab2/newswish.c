@@ -1,4 +1,4 @@
-/* CSE 306: Sea Wolves Interactive SHell */
+﻿/* CSE 306: Sea Wolves Interactive SHell */
 
 /**
  * Core assignment

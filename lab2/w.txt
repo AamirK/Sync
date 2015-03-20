@@ -1,0 +1,37 @@
+executing command
+ ...
+.
+..
+a.out
+challenge.txt
+edswish.c
+eglibc-2.19
+eglibc_2.19-0ubuntu6.6.debian.tar.xz
+eglibc_2.19-0ubuntu6.6.dsc
+eglibc_2.19.orig.tar.xz
+.gitignore
+jobs.c
+launcher.sh
+Makefile
+mock.c
+myswish.c
+newfile
+prime
+prime.c
+README
+README.txt
+redirection.h
+redirection.h.gch
+slack.txt
+sw
+swish
+swish.c
+swishDefinitions.h
+swish.h
+swish.h.gch
+test.c
+test.txt
+wolfie.h
+wolfie.h.gch
+w.txt
+z.exe
