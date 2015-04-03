@@ -1,0 +1,8 @@
+gcc -g -Wall -Werror -pthread -c -o sequential-trie.o sequential-trie.c
+gcc -g -Wall -Werror -pthread -o dns-sequential sequential-trie.o main.c
+gcc -g -Wall -Werror -pthread -c -o mutex-trie.o mutex-trie.c
+gcc -g -Wall -Werror -pthread -o dns-mutex mutex-trie.o main.c
+gcc -g -Wall -Werror -pthread -c -o rw-trie.o rw-trie.c
+gcc -g -Wall -Werror -pthread -o dns-rw rw-trie.o main.c
+gcc -g -Wall -Werror -pthread -c -o fine-trie.o fine-trie.c
+gcc -g -Wall -Werror -pthread -o dns-fine fine-trie.o main.c
