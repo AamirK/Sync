@@ -103,7 +103,7 @@ client(void *arg)
       assert(0);
     }
   }
-
+  printf("hello, world!\n");
   return NULL;
 }
 
