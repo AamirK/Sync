@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  *  A (reverse) trie with trie-wide mutual exclusion.  
  **/
@@ -751,4 +750,4 @@ void print() {
     if (root)
 	_print(root);
 }
->>>>>>> 5623c831ed0436949a5da44fcd008af9313e989e
+
