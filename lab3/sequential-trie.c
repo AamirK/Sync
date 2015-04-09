@@ -81,7 +81,6 @@ _search (struct trie_node *node, const char *string, size_t strlen) {
       return _search(node->children, string, strlen - keylen);
     } else {
       assert (strlen == keylen);
-
       return node;
     }
 

@@ -1,8 +1,8 @@
 #ifndef __TRIE_H__
 #define __TRIE_H__
-
 #include <stdint.h>
 #include <assert.h>
+
 
 /* A simple (reverse) trie interface */
 
