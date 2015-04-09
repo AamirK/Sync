@@ -2,4 +2,10 @@ dns-sequential
 dns-fine
 dns-rw
 dns-mutex
+private.xml
+configurations.xml
+mutex30.txt
+../nbproject/configurations.xml
+../nbproject/*
 *.o
+*.xml
